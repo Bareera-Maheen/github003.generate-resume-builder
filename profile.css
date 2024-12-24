@@ -1,0 +1,133 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #6B7280; /* Gray background */
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+h1, h2 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.text-black {
+    color: black;
+}
+
+/* Form Styling */
+.resume-form {
+    background-color: #f3f4f6;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    background-color: #FF9E00;
+    padding: 1rem;
+    border-radius: 8px;
+    color: white;
+}
+
+.section-title {
+    font-size: 1.25rem;
+    margin-top: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 4px;
+    background-color: #FF9E00;
+    color: white;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.input-field, .input-file, select, textarea {
+    width: 80%;
+    padding: 0.75rem;
+    margin-top: 0.25rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.input-file {
+    padding: 0.75rem;
+    cursor: pointer;
+}
+
+textarea.input-field {
+    resize: vertical;
+   
+    height: 150px;
+   
+}
+/* Submit Button */
+.btn-submit {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    background-color: #FF9E00;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.25rem;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #d67a00;
+}
+
+/* Resume Output */
+.resume-output {
+    border-style: double;
+    text-decoration:solid;
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #FF9E00;
+    color: white;
+    font-style: italic;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    gap: 12px;
+}
+
+.resume-output profile{
+    height: 180px;
+    width: 90px;
+    background-color: #FF9E00;
+    border-radius: 50%;
+    margin-bottom: 20%;
+    margin-left: 60px;
+    border:10px solid #FF9E00;
+   box-shadow: 6px 7px 9px 5px;
+}
+.resume-output profile img{
+    width: 100%;
+    border: 50%;
+}
+
+/* Responsive */
+@media (max-width: 778px) {
+    .resume-form {
+        width: 50%;
+        padding: 1rem;
+    }
+}

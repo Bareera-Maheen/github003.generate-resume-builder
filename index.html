@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generated Resume</title>
+    <link rel="stylesheet" href="profile.css"> <!-- Link to custom CSS -->
+</head>
+
+<body class="grid text-white bg-gray-500 place-content-center">
+    <main class="center">
+    <form id="forms" class="resume-form">
+        <h1 class="title">GENERATED RESUME</h1>
+<!-- Profile Picture Preview -->
+<div>
+<div class="form-group">
+    <label for="pic" class="block text-black">Profile Picture</label>
+    <input type="file" id="img" name="profile" required class="input-file" accept="image/*" onchange="previewImage()">
+    <img id="profilePic" src="" alt="Profile Preview" class="profile-img" />
+</div>
+
+     
+        <!-- Personal Information Section -->
+        <h2 class="section-title">PERSONAL INFORMATION</h2>
+        <div class="form-group">
+            <label for="name" class="text-black">Username</label>
+            <input id="name" type="text" name="name" placeholder="Enter your name" class="input-field">
+        </div>
+        <div class="form-group">
+            <label for="email" class="text-black">Email</label>
+            <input id="email" type="email" name="email" placeholder="Enter your email" class="input-field">
+        </div>
+        <div class="form-group">
+            <label for="phone" class="text-black">Phone</label>
+            <input id="phone" type="tel" name="phone" placeholder="Enter your phone number" class="input-field">
+        </div>
+
+        <!-- Education Section -->
+        <h2 class="section-title">EDUCATION</h2>
+        <div class="form-group">
+            <label for="matric" class="text-black">Matriculation</label>
+            <input id="matric" type="text" name="matric" placeholder="Enter name of institute" class="input-field">
+        </div>
+        <div class="form-group">
+            <label for="inter" class="text-black">Intermediate</label>
+            <input id="inter" type="text" name="inter" placeholder="Enter name of institute" class="input-field">
+        </div>
+        <div class="form-group">
+            <label for="grad" class="text-black">Graduation</label>
+            <input id="grad" type="text" name="grad" placeholder="Enter name of institute" class="input-field">
+        </div>
+
+        <div class="form-group">
+            <label for="degree" class="text-black">Degree</label>
+            <select id="degree" name="degree" class="input-field">
+                <option value="">Select degree</option>
+                <option value="architecture">ARCHITECTURE</option>
+                <option value="mechanical">MECHANICAL</option>
+                <option value="arts">ARTS</option>
+                <option value="medical">MEDICAL</option>
+                <option value="others">OTHERS</option>
+            </select>
+        </div>
+
+        <!-- Work Experience Section -->
+        <h2 class="section-title">WORK EXPERIENCE</h2>
+        <div class="form-group">
+            <textarea id="textexp" name="work" placeholder="Enter your work experience" class="input-field"></textarea>
+        </div>
+
+        <!-- Skills Section -->
+        <h2 class="section-title">SKILLS</h2>
+        <div class="form-group">
+            <textarea id="textskills" name="skills" placeholder="Enter your skills" class="input-field"></textarea>
+        </div>
+
+        <!-- Date Section -->
+        <div class="form-group">
+            <label for="date" class="text-black">Date</label>
+            <input id="date" type="date" name="date" class="input-field">
+        </div>
+
+        <button type="submit" class="btn-submit">Generate</button>
+        </div>
+    </form>
+
+    
+    <!-- Resume Output -->
+    <div id="resumeOut" class="resume-output"></div>
+</main>
+
+    <script src="profile.js"></script>
+</body>
+</html>
